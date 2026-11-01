@@ -1,0 +1,192 @@
+/* ============================================================
+   VISION & ENGINEERING LAB SECTION
+   ============================================================ */
+
+.vision-section {
+  position: relative;
+  background: linear-gradient(180deg, var(--bg-deep) 0%, rgba(19, 19, 36, 0.4) 100%);
+}
+
+.vision-pillars-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.75rem;
+  margin-bottom: 3rem;
+}
+
+.vision-pillar-card {
+  padding: 2.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  border-radius: var(--radius-xl);
+}
+
+.pillar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pillar-num {
+  font-family: var(--font-mono);
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--violet-light);
+}
+
+.pillar-title {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: -0.015em;
+}
+
+.pillar-desc {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+/* Terminal Card */
+.terminal-card {
+  background: #090912;
+  border: 1px solid rgba(167, 139, 250, 0.2);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6), 0 0 50px rgba(124, 58, 237, 0.1);
+}
+
+.terminal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.25rem;
+  background: #111120;
+  border-bottom: 1px solid var(--border);
+}
+
+.terminal-controls {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.terminal-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.terminal-dot.red { background: #ff5f56; }
+.terminal-dot.yellow { background: #ffbd2e; }
+.terminal-dot.green { background: #27c93f; }
+
+.terminal-title {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+}
+
+.terminal-status {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  color: var(--text-muted);
+}
+
+.terminal-body {
+  padding: 1.5rem;
+}
+
+.terminal-tabs {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.terminal-tab-btn {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  padding: 0.35rem 0.85rem;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  transition: all var(--dur-fast);
+}
+
+.terminal-tab-btn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-hover);
+}
+
+.terminal-tab-btn.active {
+  background: rgba(124, 58, 237, 0.18);
+  border-color: rgba(167, 139, 250, 0.4);
+  color: #ffffff;
+}
+
+.terminal-console {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  font-family: var(--font-mono);
+  background: #06060c;
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.terminal-line {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  font-size: 0.85rem;
+}
+
+.terminal-prompt {
+  color: var(--mint);
+  font-weight: 700;
+}
+
+.terminal-command {
+  color: #ffffff;
+}
+
+.terminal-output-block {
+  padding-left: 1.25rem;
+  border-left: 2px solid rgba(167, 139, 250, 0.3);
+  margin-block: 0.35rem;
+}
+
+.terminal-output-title {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--violet-light);
+  margin-bottom: 0.4rem;
+}
+
+.terminal-output-body {
+  font-family: var(--font-body);
+  font-size: 0.86rem;
+  color: #cbc8e0;
+  line-height: 1.6;
+}
+
+.cursor-line {
+  margin-top: 0.25rem;
+}
+
+.terminal-cursor {
+  width: 8px;
+  height: 15px;
+  background: var(--text-primary);
+  display: inline-block;
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

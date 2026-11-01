@@ -1,0 +1,156 @@
+/* ============================================================
+   ABOUT ME SECTION — EDITORIAL STYLING
+   ============================================================ */
+
+.about-section {
+  position: relative;
+  background: linear-gradient(180deg, var(--bg-deep) 0%, rgba(14, 14, 24, 0.6) 100%);
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 0.75fr;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+/* Main Narrative Card */
+.about-narrative-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 2.5rem;
+}
+
+.about-card-badge {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--violet-light);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.about-card-heading {
+  color: var(--text-primary);
+  font-size: 1.45rem;
+}
+
+.about-quote {
+  position: relative;
+  margin-top: 0.75rem;
+  padding: 1.25rem 1.5rem 1.25rem 2.5rem;
+  background: rgba(124, 58, 237, 0.05);
+  border-left: 2px solid var(--violet-light);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  font-style: italic;
+  color: var(--text-primary);
+}
+
+.about-quote-mark {
+  position: absolute;
+  left: 0.75rem;
+  top: 0.25rem;
+  font-size: 2.2rem;
+  line-height: 1;
+  color: var(--violet);
+  opacity: 0.4;
+  font-family: Georgia, serif;
+}
+
+.about-quote p {
+  font-size: 0.95rem;
+  line-height: 1.65;
+  color: #d8d4f0;
+}
+
+/* Sidebar Stat Cards */
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.about-stat-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1.2rem;
+  padding: 1.6rem;
+}
+
+.about-stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-md);
+  background: var(--violet-subtle);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.about-stat-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.about-stat-title {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.about-stat-sub {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.about-cgpa-pill {
+  margin-top: 0.4rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.65rem;
+  background: rgba(124, 58, 237, 0.12);
+  border: 1px solid rgba(167, 139, 250, 0.25);
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: var(--violet-light);
+  width: fit-content;
+}
+
+.cgpa-num {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* Coursework Card */
+.coursework-card {
+  padding: 1.6rem 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.coursework-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.coursework-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+@media (max-width: 900px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
